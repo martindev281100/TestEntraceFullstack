@@ -1,30 +1,35 @@
 // function mergeArr() {
+//     let newArr = []
 //     let A1 = prompt('Enter Array 1 (With commas): ');
 //     A1 = A1.split(',')
 //     let A2 = prompt('Enter Array 2 (With commas): ');
 //     A2 = A2.split(',')
-//     let newArr = []
 //     for (let i = 0; i < A1.length; i++) {
-//         newArr.push(Number(A1[i]))
+//         A1[i] = Number(A1[i])
 //     }
 //     for (let i = 0; i < A2.length; i++) {
-//         newArr.push(Number(A2[i]))
+//         A2[i] = Number(A2[i])
 //     }
-//     console.log(newArr)
-//     let length;
-//     if (A1.length > A2.length) {
-//         length = A1.length;
-//     } else {
-//         length = A2.length;
-//     }
-//     console.log(newArr.length)
-//     for (let i = 0; i < newArr.length; i++) {
-//         newArr.splice(0, 1)
-//     }
-//     console.log(newArr)
+//     console.log(A1)
+//     console.log(A2)
 
+//     for (let i = 0; i < A1.length; i++) {
+//         if (newArr.indexOf(A1[i]) === -1) {
+//             newArr.push(A1[i])
+//         }
+//     }
+//     for (let i = 0; i < A2.length; i++) {
+//         if (newArr.indexOf(A2[i]) === -1) {
+//             newArr.push(A2[i])
+//         }
+//     }
+//     console.log(newArr)
 // }
 // mergeArr()
+
+
+
+
 async function quizApi() {
     let dataQuiz;
     await fetch('https://opentdb.com/api.php?amount=5&category=21&difficulty=easy&type=multiple')
